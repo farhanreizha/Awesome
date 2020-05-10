@@ -16,10 +16,18 @@
   <title>Awesome Search Engine</title>
 </head>
 
-<body class="panel" id="panel">
+<body>
+
+
+
+  <div class="panel" id="panel">
+    <div class="color-picker">change background</div>
+    <div id="particles-js"></div>
+  </div>
+
+  <div id="jam"></div>
 
   <!-- kolom search -->
-  <div id="jam"></div>
   <div class="lable">Search Engine</div>
   <form method="GET" action="https://www.google.com/search">
     <div class="search-box">
@@ -39,11 +47,10 @@
     <a class="IG" href="https://www.instagram.com/?hl=id"><i class="fab fa-instagram fa-3x"></i></a>
   </div>
 
-
-  <div class="color-picker">change background</div>
-
   <script src="js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/app.js"></script>
   <script>
     let panel = document.getElementById('panel')
 
