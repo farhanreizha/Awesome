@@ -34,6 +34,9 @@ body {
 }
 
 .search-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -43,23 +46,25 @@ body {
   height: 40px;
   border-radius: 40px;
   padding: 10px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .search-box:hover > .search-txt {
-  width: 240px;
+  width: 230px;
   padding: 0 6px;
 }
 
 .search-btn {
   color: #e84118;
   float: right;
+  padding: 0 10px;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   background: #2f3640;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -89,5 +94,59 @@ body {
   height: 40vh;
   margin-bottom: 10px;
   background-color: #060B41;
+}
+
+div a.youtube {
+  color: red;
+  position: absolute;
+  top: 61%;
+  left: 47%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+div a.whatsapp {
+  color: green;
+  position: absolute;
+  top: 61%;
+  left: 41%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+div a.facebook {
+  color: white;
+  position: absolute;
+  top: 61%;
+  left: 53%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+div a.IG {
+  color: white;
+  position: absolute;
+  top: 61%;
+  left: 59%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 800px) {
+  .lable {
+    font-size: 25px;
+  }
+  div a.youtube {
+    left: 44%;
+  }
+  div a.whatsapp {
+    left: 32%;
+  }
+  div a.facebook {
+    left: 56%;
+  }
+  div a.IG {
+    left: 67%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

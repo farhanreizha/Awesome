@@ -27,6 +27,7 @@ body {
 }
 
 .search-box {
+  display: flex;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -35,10 +36,11 @@ body {
   height: 40px;
   border-radius: 40px;
   padding: 10px;
+  flex-direction: row;
 }
 
 .search-box:hover>.search-txt {
-  width: 240px;
+  width: 230px;
   padding: 0 6px;
 }
 
@@ -46,11 +48,11 @@ body {
 .search-btn {
   color: #e84118;
   float: right;
+  padding: 0 10px;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   background: #2f3640;
-  display: flex;
   justify-content: center;
   align-items: center;
   transition: 0.4s;
@@ -74,4 +76,61 @@ body {
   height: 40vh;
   margin-bottom: 10px;
   background-color: #060B41;
+}
+
+div a.youtube {
+  color: red;
+  position: absolute;
+  top: 61%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+}
+
+div a.whatsapp {
+  color: green;
+  position: absolute;
+  top: 61%;
+  left: 41%;
+  transform: translate(-50%, -50%);
+}
+
+div a.facebook {
+  color: white;
+  position: absolute;
+  top: 61%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+}
+
+div a.IG {
+  color: white;
+  position: absolute;
+  top: 61%;
+  left: 59%;
+  transform: translate(-50%, -50%)
+}
+
+// tab
+
+// mobile
+@media screen and (max-width: 800px) {
+  .lable {
+    font-size: 25px;
+  }
+
+  div a.youtube {
+    left: 44%;
+  }
+
+  div a.whatsapp {
+    left: 32%;
+  }
+
+  div a.facebook {
+    left: 56%;
+  }
+
+  div a.IG {
+    left: 67%;
+  }
 }
