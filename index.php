@@ -29,7 +29,7 @@
 
   <!-- kolom search -->
   <div class="lable">Search Engine</div>
-  <form method="GET" action="https://www.google.com/search">
+  <form method="GET" action="https://duckduckgo.com/?q=%s">
     <div class="search-box">
       <input class="search-txt" type="text" name="q" placeholder="Type to search">
       <input type="submit" class="search-btn fas fa-search" value="Search">
